@@ -1,0 +1,242 @@
+.App {
+  text-align: center;
+}
+body {
+  margin:0 0;
+  border: 0 0;
+  padding: 0 0;
+}
+button{
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-weight:bold ;
+  transition: 0.3s;
+  color:aliceblue;
+  cursor: pointer;
+  background-color: rgb(51, 56, 56);
+}
+button:hover{
+  font-weight:bold ;
+  transition: 0.3s;
+  color:rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: rgb(103, 112, 112);
+}
+
+.notification{
+  color: rgb(0, 163, 8);
+  background: rgb(165, 149, 149);
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.header{
+  margin:1rem 1rem;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+
+}
+#header2{
+  margin:0 0;
+  text-align: center;
+  font-size: 5vw;
+  letter-spacing: 3px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.operation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align:justify;
+}
+
+.filterDiv{
+  text-align: center;
+
+}
+
+.filterDiv h2{
+  text-align: center;
+  color: #d40000;
+}
+.addForm{
+  text-align: center;
+  
+}
+.addFormDetails{
+  text-align: center;
+}
+
+.details{
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 1, 1);
+  text-align:justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin:2rem 2rem ;
+  border: #d40000;
+  border-radius: 2vh;
+}
+
+
+.details li{
+    background-color: rgb(230, 223, 217);
+    width: 40vw;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+.details li button{
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  color:aliceblue;
+  background-color: rgb(51, 56, 56);
+  align-content: flex-end;
+}
+.details li button:hover{
+  cursor: pointer;
+  transition-duration: 0.5s;
+  background-color: rgb(152, 160, 160);
+  color: #d40000;
+}
+li{
+  list-style: none;
+  
+  margin: 1rem;
+}
+form{
+  text-align: center;
+  border: #d40000;
+  border-radius: 2vh;
+}
+input{
+  color: white;
+  background-color: black;
+}
+button{
+
+  border-top: 2rem;
+  height: 2rem;
+  width: 5rem;
+}
+
+
+.search{
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding:.5rem;
+}
+.search  svg{
+  height: 4rem;
+  padding: 1rem;
+  position: absolute;
+  cursor: pointer;
+}
+.searchIcon{
+  text-align: start;
+  height: 2rem;
+  width: 2rem;
+  fill: #282c34;
+    z-index:99;
+    transition: 500ms width ease-in-out,
+    500ms padding ease-in-out,
+   500ms border-radius ease-in-out;
+}
+.filterHeader{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-shadow: 0 0 10px 5px #babdc2;
+  margin-top: 2rem;
+  
+}
+.filterHeader h3{
+  min-width: 30vw;
+  font-size: x-large;
+  text-align: center;
+}
+.searchInput {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  border: none;
+  border-radius: 2%;
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: #000000;
+  background-color: white;
+  outline: none;
+  width: 5rem;
+  padding:0 0;
+  transition: 500ms width ease-in-out,
+   500ms padding ease-in-out,
+  500ms border-radius ease-in-out;
+}
+
+.searchClose{
+  right: 0rem;
+  fill: white;
+  transition: 500ms fill ease-in;
+}
+.searchOpenClose{
+  right: 1rem;
+  margin : 0 0;
+  border: 0 0 ;
+  position: absolute;
+  fill: rgb(0, 0, 0);
+    transition: 500ms fill ease-in;
+}
+.inputOpenState {
+  width: 30%;
+  color: #1b1919;
+  background-color: #e4e1e1;
+  padding: 1rem 8rem 1rem 6rem;
+  margin: 0 0 ;
+  border-radius: .2rem;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+footer{
+  height: 10vh;
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
